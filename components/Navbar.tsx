@@ -11,6 +11,7 @@ import {
     DropdownMenuTrigger 
 } from './ui/dropdown-menu'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+import ThemeToggler from './ThemeToggler'
 
 const Navbar = () => {
   return (
@@ -20,6 +21,7 @@ const Navbar = () => {
         </Link>
 
         <div className='flex items-center'>
+            <ThemeToggler />
             <DropdownMenu>
                 <DropdownMenuTrigger className='focus:outline-none'>
                     <Avatar>
